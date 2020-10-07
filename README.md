@@ -1,1 +1,1 @@
-# my-react-app
+# My react app  - learning app

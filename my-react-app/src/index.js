@@ -11,6 +11,23 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// NOTE:
+// We can create many of them
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Header />
+//   </React.StrictMode>,
+//   document.getElementById('header')
+// );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Footer />
+//   </React.StrictMode>,
+//   document.getElementById('footer')
+// );
+
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

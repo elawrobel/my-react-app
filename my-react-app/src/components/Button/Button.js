@@ -1,16 +1,14 @@
 import React from 'react';
 
-function Button(props) { // function Button({ label })
+function Button(props) { // function Button({ label, color })
   // const { label } = props;
-
-  return(
+  return (
     // <button>{props.label}</button>
-    <button type={props.type}>{props.label}</button>
+    <button type={props.type}>{props.children}</button>
   );
 }
-
 Button.defaultProps = {
-  label: 'Click now',
+  label: 'Enter label for button',
   type: 'submit'
 }
 

@@ -4,7 +4,7 @@ function Button(props) { // function Button({ label, color })
   // const { label } = props;
   return (
     // <button>{props.label}</button>
-    <button type={props.type}>{props.children}</button>
+    <button className="button_send" type={props.type}>{props.children}</button>
   );
 }
 Button.defaultProps = {

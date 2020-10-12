@@ -1,38 +1,63 @@
-.App {
+/* The navigation bar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar li a:hover {
+  background: #ddd;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* The calculator page */
+.calculator{
+  margin-top: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .calculator{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator div {
+    padding-bottom: 10px;
+  }
+}
+
+.calculator span{
+  padding: 0 10px;
+}
+
+.result{
+  color: red;
+  font-weight: bold;
+}
+
+.button_send{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: red;
+  font-weight: bold;
+  border: none;
+  border-radius: 10%;
 }

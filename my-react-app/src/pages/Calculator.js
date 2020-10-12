@@ -45,7 +45,7 @@ function Calculator() {
 
   return(
 
-    <form onSubmit={handleSubmit}>
+    <form className="calculator" onSubmit={handleSubmit}>
       <div>
         <input type="number" placeholder="Amount" onChange={(event) => { setAmount(event.target.value); } } />
       </div>
@@ -57,7 +57,7 @@ function Calculator() {
         <span>To:</span>
         <Select value={ currencyTo } setCurrency= {setCurrencyTo} />
       </div>
-      <div>Result: {result} </div>
+      <div className="result">Result: {result} </div>
       <Button type="submit">Send</Button>
     </form>
 
